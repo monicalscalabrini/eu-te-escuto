@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saiba Mais</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topo"></header>
+
+<nav class="menu">
+<ul class="menu-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="sobrenos.html">Sobre nós</a></li>
+<li><a href="narcisismo.html">Narcisismo</a></li>
+<li><a href="cuide-se.html">Cuide-se</a></li>
+<li><a href="terapias.html">Terapias</a></li>
+<li><a href="saibamais.html">Saiba Mais</a></li>
+<li><a href="faleconosco.html">Fale Conosco</a></li>
+<li><a href="chat.html">Chat</a></li>
+</ul>
+</nav>
+
+<h1 class="titulo-pagina">Saiba Mais</h1>
+
+<div class="pagina-conhecimento">
+
+<!-- MENU ESQUERDA -->
+
+<div class="menu-esquerda">
+
+<h3>Patologias</h3>
+
+<ul>
+<li onclick="mostrarConteudo('narcisismo')">Narcisismo</li>
+<li onclick="mostrarConteudo('depressao')">Depressão</li>
+<li onclick="mostrarConteudo('ansiedade')">Ansiedade</li>
+<li onclick="mostrarConteudo('dependencia')">Dependência emocional</li>
+<li onclick="mostrarConteudo('compulsao')">Compulsão alimentar</li>
+<li onclick="mostrarConteudo('burnout')">Burnout</li>
+</ul>
+
+</div>
+
+
+<!-- CONTEUDO CENTRO -->
+
+<div class="conteudo-centro" id="conteudo">
+
+<h2>Escolha um tema</h2>
+
+<p>
+Clique em um tema à esquerda para ler o conteúdo.
+</p>
+
+</div>
+
+
+<!-- LADO DIREITO -->
+
+<div class="apoio-direita">
+
+<h3>Mensagem para você</h3>
+
+<div class="mensagens">
+
+<p onclick="mostrarConteudo('importante')">Você é importante</p>
+
+<p onclick="mostrarConteudo('sozinho')">Você não está sozinho</p>
+
+<p onclick="mostrarConteudo('valor')">
+Seu valor não depende da opinião de ninguém
+</p>
+
+<p onclick="mostrarConteudo('acredite')">Acredite em você</p>
+
+<p onclick="mostrarConteudo('feliz')">
+Seu eu interior quer te ver feliz
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function mostrarConteudo(tema){
+
+let conteudo = document.getElementById("conteudo");
+
+/* PATOLOGIAS */
+
+if(tema == "narcisismo"){
+conteudo.innerHTML = "<h2>Narcisismo</h2><p>O narcisismo é um conceito da psicologia que descreve um padrão de funcionamento psicológico caracterizado por excessiva valorização de si mesmo, necessidade intensa de admiração, dificuldade em reconhecer as necessidades dos outros e uma tendência a manter uma imagem grandiosa de si.</p>";
+}
+
+if(tema == "depressao"){
+conteudo.innerHTML = `
+<h2>Depressão</h2>
+
+<p>
+A depressão é um transtorno emocional caracterizado por tristeza profunda,
+falta de energia, perda de interesse em atividades que antes eram
+prazerosas e dificuldade de encontrar sentido nas coisas do dia a dia.
+</p>
+
+<p>
+Diferente da tristeza comum, a depressão pode durar semanas ou meses
+e afetar diversas áreas da vida, como trabalho, estudos,
+relacionamentos e saúde física.
+</p>
+
+<b>Sinais comuns da depressão:</b>
+
+<ul>
+<li>Sentimento constante de tristeza ou vazio</li>
+<li>Cansaço excessivo</li>
+<li>Dificuldade de concentração</li>
+<li>Alterações no sono</li>
+<li>Perda ou aumento de apetite</li>
+<li>Sensação de inutilidade ou culpa</li>
+</ul>
+
+<p>
+A depressão tem tratamento e buscar ajuda profissional pode
+fazer uma grande diferença no processo de recuperação.
+</p>
+`;
+}
+
+if(tema == "ansiedade"){
+conteudo.innerHTML = `
+<h2>Ansiedade</h2>
+
+<p>
+A ansiedade é uma reação natural do organismo diante de situações
+de perigo ou preocupação. Ela faz parte da vida e pode até ajudar
+na preparação para desafios importantes.
+</p>
+
+<p>
+No entanto, quando a ansiedade se torna intensa, constante e
+difícil de controlar, ela pode começar a prejudicar a qualidade
+de vida da pessoa.
+</p>
+
+<b>Sintomas comuns da ansiedade:</b>
+
+<ul>
+<li>Preocupação excessiva</li>
+<li>Batimentos cardíacos acelerados</li>
+<li>Respiração curta ou sensação de falta de ar</li>
+<li>Tensão muscular</li>
+<li>Dificuldade para relaxar</li>
+<li>Pensamentos negativos repetitivos</li>
+</ul>
+
+<p>
+Aprender a reconhecer os sinais e buscar estratégias de cuidado
+emocional pode ajudar a reduzir o impacto da ansiedade no dia a dia.
+</p>
+`;
+}
+
+if(tema == "dependencia"){
+conteudo.innerHTML = `
+<h2>Dependência emocional</h2>
+
+<p>
+A dependência emocional acontece quando uma pessoa sente que
+precisa da aprovação ou presença constante de outra pessoa
+para se sentir segura ou valorizada.
+</p>
+
+<p>
+Esse tipo de relação pode gerar medo intenso de abandono,
+dificuldade de estabelecer limites e sensação de perda da própria identidade.
+</p>
+
+<b>Sinais de dependência emocional:</b>
+
+<ul>
+<li>Medo exagerado de perder o relacionamento</li>
+<li>Dificuldade de tomar decisões sozinho</li>
+<li>Colocar as necessidades do outro sempre em primeiro lugar</li>
+<li>Sentir culpa ao dizer "não"</li>
+<li>Sentir que não consegue viver sem a outra pessoa</li>
+</ul>
+
+<p>
+Recuperar a autonomia emocional é um processo importante para
+construir relações mais saudáveis e equilibradas.
+</p>
+`;
+}
+
+if(tema == "compulsao"){
+conteudo.innerHTML = `
+<h2>Compulsão alimentar</h2>
+
+<p>
+A compulsão alimentar é caracterizada por episódios de consumo
+excessivo de alimentos em um curto período de tempo, geralmente
+acompanhados de sensação de perda de controle.
+</p>
+
+<p>
+Esses episódios muitas vezes estão relacionados a emoções
+como ansiedade, tristeza, estresse ou frustração.
+</p>
+
+<b>Sinais comuns:</b>
+
+<ul>
+<li>Comer grandes quantidades rapidamente</li>
+<li>Comer mesmo sem fome física</li>
+<li>Sentimento de culpa após comer</li>
+<li>Dificuldade de controlar o impulso de comer</li>
+</ul>
+
+<p>
+O tratamento pode envolver acompanhamento psicológico,
+mudanças de hábitos e apoio emocional.
+</p>
+`;
+}
+
+if(tema == "burnout"){
+conteudo.innerHTML = `
+<h2>Burnout</h2>
+
+<p>
+Burnout é um estado de esgotamento físico e emocional causado
+por estresse crônico relacionado ao trabalho ou a situações
+de alta pressão prolongada.
+</p>
+
+<p>
+Pessoas que enfrentam burnout costumam sentir exaustão intensa,
+desmotivação e sensação de incapacidade de lidar com as demandas.
+</p>
+
+<b>Sinais de burnout:</b>
+
+<ul>
+<li>Cansaço extremo</li>
+<li>Perda de motivação</li>
+<li>Irritabilidade</li>
+<li>Dificuldade de concentração</li>
+<li>Sensação de fracasso profissional</li>
+</ul>
+
+<p>
+Reconhecer os sinais e buscar apoio é essencial para recuperar
+o equilíbrio emocional e a qualidade de vida.
+</p>
+`;
+}
+
+/* MENSAGENS */
+
+if(tema == "importante"){
+conteudo.innerHTML = `
+<h2>Você é importante</h2>
+
+<p>
+Mesmo nos momentos em que você se sente invisível ou
+desvalorizado, sua existência tem significado.
+</p>
+
+<p>
+Cada pessoa possui uma história única, experiências
+valiosas e capacidade de crescer e transformar sua vida.
+</p>
+`;
+}
+
+if(tema == "sozinho"){
+conteudo.innerHTML = "<h2>Você não está sozinho</h2><p>Muitas pessoas enfrentam dores emocionais semelhantes.</p>";
+}
+
+if(tema == "valor"){
+conteudo.innerHTML = "<h2>Seu valor não depende da opinião de ninguém</h2><p>A forma como outras pessoas te tratam não define quem você é.</p>";
+}
+
+if(tema == "acredite"){
+conteudo.innerHTML = "<h2>Acredite em você</h2><p>Você possui força interior para reconstruir sua vida.</p>";
+}
+
+if(tema == "feliz"){
+conteudo.innerHTML = "<h2>Seu eu interior quer te ver feliz</h2><p>Existe dentro de você uma parte que busca paz e equilíbrio.</p>";
+}
+
+}
+
+</script>
+
+<footer>
+<p>© 2026 Eu Te Escuto - Todos os Direitos Reservados</p>
+</footer>
+
+</body>
+</html>

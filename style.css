@@ -1,0 +1,701 @@
+/* RESET */
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:#333;
+
+background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+url("imagens/fundo-mente.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+
+/* HEADER */
+
+header{
+background:#111;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+
+/* MENU */
+
+.menu{
+background:#222;
+}
+
+.menu-links{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:40px;
+margin:0;
+padding:0;
+}
+
+.menu-links li a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu-links li a:hover{
+background:#0077ff;
+}
+
+
+/* BANNER */
+
+.banner img{
+width:100%;
+height:350px;
+object-fit:cover;
+display:block;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.container{
+max-width:1400px;
+margin:40px auto;
+
+display:grid;
+grid-template-columns:220px 320px 320px 320px 220px;
+
+justify-content:center;
+gap:40px;
+
+align-items:start;
+}
+
+
+/* CARDS PRINCIPAIS */
+
+.home-cards{
+display:contents;
+}
+
+
+/* CARD */
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.card video{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.card h2{
+border-bottom:2px solid #0077ff;
+padding-bottom:6px;
+margin-bottom:10px;
+}
+
+
+/* BLOCOS LATERAIS */
+
+.mensagem-lateral,
+.mensagem-lateral-direita{
+width:220px;
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* FORMULÁRIO */
+
+.contact-section{
+max-width:500px;
+margin:40px auto;
+}
+
+.contact-form{
+background:white;
+padding:30px;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+}
+
+.contact-form label{
+margin-top:15px;
+font-weight:bold;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+margin-top:5px;
+}
+
+.contact-form button{
+margin-top:20px;
+padding:12px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+
+/* BOTÃO DOWNLOAD */
+
+.botao-download{
+display:inline-block;
+margin-top:10px;
+background:#0077ff;
+color:white;
+padding:10px 15px;
+border-radius:6px;
+text-decoration:none;
+}
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+background:#111;
+color:white;
+padding:12px;
+margin-top:40px;
+}
+
+
+/* PÁGINAS INTERNAS */
+
+.page-content{
+max-width:900px;
+margin:auto;
+padding:40px;
+line-height:1.7;
+}
+
+.page-content h1{
+font-size:36px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.page-content h2{
+margin-top:35px;
+color:#2c3e50;
+}
+
+.page-content p{
+text-align:justify;
+line-height:1.6;
+margin-bottom:12px;
+}
+
+
+/* SOBRE */
+
+.sobre-intro{
+display:flex;
+align-items:flex-start;
+gap:30px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.foto-perfil{
+width:180px;
+border-radius:50%;
+}
+
+.texto-intro{
+flex:1;
+min-width:300px;
+}
+
+
+/* VÍDEOS */
+
+video{
+width:100%;
+max-width:420px;
+height:auto;
+border-radius:8px;
+margin-top:10px;
+}
+
+
+/* BIBLIOTECA */
+
+.biblioteca{
+max-width:1100px;
+margin:auto;
+padding:40px;
+text-align:center;
+}
+
+.biblioteca .intro{
+margin-bottom:40px;
+font-size:18px;
+}
+
+.livros-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,250px);
+justify-content:center;
+gap:40px;
+}
+
+.livro-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.livro-card img{
+width:140px;
+height:200px;
+object-fit:cover;
+margin-bottom:15px;
+border-radius:6px;
+}
+
+.livro-card h3{
+border-bottom:2px solid #0077ff;
+padding-bottom:6px;
+margin-bottom:10px;
+}
+
+
+/* PÁGINA SAIBA MAIS */
+
+.titulo-pagina{
+text-align:center;
+margin-top:40px;
+}
+
+.pagina-conhecimento{
+display:grid;
+grid-template-columns:250px 1fr 250px;
+gap:30px;
+max-width:1200px;
+margin:40px auto;
+}
+
+.menu-esquerda,
+.apoio-direita{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.conteudo-centro{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+line-height:1.6;
+}
+
+.menu-esquerda ul{
+list-style:none;
+padding:0;
+}
+
+.menu-esquerda li{
+margin:10px 0;
+cursor:pointer;
+color:#0077ff;
+padding:6px 8px;
+border-radius:6px;
+transition:0.2s;
+}
+
+.menu-esquerda li:hover{
+background:#e6f0ff;
+}
+
+.mensagens p{
+margin:10px 0;
+cursor:pointer;
+color:#0077ff;
+padding:6px;
+border-radius:6px;
+transition:0.2s;
+}
+
+.mensagens p:hover{
+background:#e6f0ff;
+}
+
+.home-cards{
+display:contents;
+}
+.contact-section{
+max-width:500px;
+margin:60px auto;
+}
+
+.contact-form{
+background:white;
+padding:35px;
+border-radius:12px;
+display:flex;
+flex-direction:column;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.contact-form h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.contact-form label{
+margin-top:15px;
+font-weight:bold;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-top:5px;
+font-size:14px;
+}
+
+.contact-form textarea{
+resize:vertical;
+}
+
+.contact-form button{
+margin-top:25px;
+padding:14px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+background:#005fd1;
+}
+/* AREA DE CONTATO */
+
+.contato-container{
+max-width:1200px;
+margin:80px auto;
+display:grid;
+grid-template-columns:1fr 500px;
+gap:60px;
+align-items:center;
+padding:20px;
+}
+
+.contato-texto h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contato-texto p{
+line-height:1.6;
+margin-bottom:15px;
+font-size:16px;
+}
+
+
+/* FORMULARIO */
+
+.contato-form{
+background:white;
+padding:45px;
+border-radius:16px;
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
+
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.contato-form h2{
+text-align:center;
+margin-bottom:10px;
+font-size:24px;
+}
+
+/* CAMPOS */
+
+.contato-form input,
+.contato-form textarea{
+padding:16px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:15px;
+width:100%;
+transition:0.25s;
+}
+
+.contato-form textarea{
+resize:vertical;
+height:140px;
+}
+
+/* EFEITO QUANDO CLICA NO CAMPO */
+
+.contato-form input:focus,
+.contato-form textarea:focus{
+outline:none;
+border:1px solid #0077ff;
+box-shadow:0 0 0 3px rgba(0,119,255,0.15);
+}
+
+/* BOTÃO */
+
+.contato-form button{
+margin-top:10px;
+padding:18px;
+border:none;
+border-radius:10px;
+background:linear-gradient(135deg,#0077ff,#005edb);
+color:white;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+transition:0.25s;
+}
+
+.contato-form button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+/* BANNER TERAPIAS */
+
+.banner-terapias img{
+width:100%;
+height:400px;
+object-fit:cover;
+display:block;
+}
+.banner-terapias img{
+width:100%;
+height:420px;
+object-fit:cover;
+object-position:center top;
+}
+/* PROFISSIONAIS */
+
+.profissionais{
+max-width:1200px;
+margin:80px auto;
+text-align:center;
+}
+
+.titulo-profissionais{
+font-size:32px;
+margin-bottom:40px;
+}
+
+/* GRID DOS CARDS */
+
+.cards-profissionais{
+display:grid;
+grid-template-columns:repeat(auto-fit,250px);
+justify-content:center;
+gap:40px;
+}
+
+/* CARD */
+
+.card-profissional{
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card-profissional:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* FOTO */
+
+.card-profissional img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+.card-profissional h3{
+margin:10px 0 5px 0;
+font-size:20px;
+}
+
+.card-profissional p{
+margin:4px 0;
+color:#555;
+}
+/* PAGINA NARCISISMO */
+
+.pagina-narcisismo{
+max-width:1000px;
+margin:60px auto;
+padding:20px;
+}
+
+.pagina-narcisismo h1{
+text-align:center;
+font-size:36px;
+margin-bottom:20px;
+}
+
+.intro{
+text-align:center;
+font-size:18px;
+margin-bottom:50px;
+line-height:1.6;
+}
+
+
+/* VIDEOS */
+
+.videos-narcisismo{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+max-width:950px;
+margin:60px auto;
+}
+
+.video-box{
+width:420px;
+text-align:center;
+}
+
+.video-box video{
+width:100%;
+height:240px;
+object-fit:cover;
+border-radius:10px;
+}
+
+
+/* EXPLICAÇÃO */
+
+.explicacao{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+margin:80px auto;
+max-width:1000px;
+flex-wrap:wrap;
+}
+
+.explicacao img{
+width:420px;
+height:260px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.explicacao .texto{
+flex:1;
+}
+
+
+/* SINAIS */
+
+.sinais{
+background:white;
+padding:40px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+margin:70px auto;
+max-width:850px;
+}
+.sinais ul{
+margin-top:20px;
+line-height:1.8;
+}
+
+
+/* RECUPERAÇÃO */
+
+.recuperacao{
+margin-bottom:60px;
+line-height:1.7;
+}
+
+
+/* CTA */
+
+.ajuda{
+text-align:center;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.botao-ajuda{
+display:inline-block;
+margin-top:20px;
+background:#0077ff;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+
+
+
