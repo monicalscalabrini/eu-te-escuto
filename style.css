@@ -26,6 +26,30 @@ color:white;
 text-align:center;
 padding:10px;
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+.banner {
+  padding: 80px 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+nav a:hover {
+  color: #00bcd4;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
 /* MENU */
@@ -693,6 +717,11 @@ padding:14px 30px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
+}
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 
